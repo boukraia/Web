@@ -1,0 +1,136 @@
+<body>
+    <section id="title">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        {% include "header.html" %}
+        <!-- Title     -->
+        <div class="row slogan">
+          <div class="col-lg-6">
+            <h1>Think Technology,Think Kits.</h1>
+            <p class="sub">
+              an Offshore Limited Liability Company based in Sfax - Tunisia and
+              offering a wide range of IT services (Business IT Support, IT
+              Advisory Services, Custom Web & Software Applications Development,
+              Maintaining IT applications, Technical training sessions, ...).
+            </p>
+            <button
+              type="button"
+              class="btn red-button btn-lg download-button">
+                <a href="{{ url_for('contact') }}"> L'ets Talk</a>
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg download-button"
+            ><a   href="{{ url_for('about')}}">
+              Know More
+                </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+
+    <section id="features">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="divider">
+          <div class="divider-wrap">
+            <div class="divider-before"></div>
+            <div class="divider-middle">
+              <i class="fas fa-star fa-4x"></i>
+            </div>
+            <div class="divider-after"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid row ">
+        <div class="features-box col-lg-4 ">
+          <div class = "colored">
+          <i class="fa-solid fa-house fa-4x "></i>
+          <h3 class="features-title">Shop-window websites .</h3>
+          </div>
+          <p>
+            Introduce yourself to your customers and partners via a simple and
+            dynamic website.
+          </p>
+        </div>
+        <div class="features-box col-lg-4">
+          <div class = "colored">
+          <i class="fa-solid fa-credit-card fa-4x"></i>
+            
+          <h3 class="features-title">E-Commerce websites</h3>
+          </div>
+          <p>Market your products and services online easily.</p>
+          
+        </div>
+        <div class="features-box col-lg-4">
+          <div class = "colored">
+          <i class="fa-sharp fa-solid fa-pen fa-4x"></i>
+          
+          <h3 class="features-title">Responsive Design.</h3>
+          </div>
+          
+          <p>
+            All our websites are adapted to the different digital terminals
+            (computers, tablets and smartphones)..
+          </p>
+
+        </div>
+        <div class="features-box col-lg-4">
+          <div class = "colored">
+          <i class="fa-solid fa-mobile fa-4x"></i>
+          <h3 class="features-title">Mobile applications .</h3>
+          </div>
+          <p>
+            We develop your customizable mobile applications downloadable from
+            the stores. .
+          </p>
+        </div>
+        <div class="features-box col-lg-4">
+          <div class = "colored">
+          <i class="fa-solid fa-film fa-4x"></i>
+          <h3 class="features-title">Video Motion Designs.</h3>
+          </div>
+          <p>
+            Talk about yourself in video, thanks to our animation videos in
+            motion design.
+          </p>
+        </div>
+        <div class="features-box col-lg-4">
+                    <div class = "colored">
+
+          <i class="fa-solid fa-people-group fa-4x"></i>
+          <h3 class="features-title">Monitoring / Coaching .</h3>
+          </div>
+          <p>
+            By phone or email, our teams listen to you and develop your tools
+            according to your needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+
+    <section id="cta">
+      <h1>Let's team up and achieve greatness together.</h1>
+   <button
+              type="button"
+              class="btn red-button btn-lg download-button">
+                <a href="{{ url_for('contact') }}"> L'ets Talk<a>
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg download-button"
+            ><a   href="{{ url_for('about')}}">
+              Know More
+                </a>
+            </button>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">{% include "footer.html" %}</footer>
+    <!-- Footer -->
+  </body>

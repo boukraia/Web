@@ -1,0 +1,155 @@
+ /* Basic Elements Section */
+ body {
+     font-family: "Bombshell Pro";
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-family: 'Bombshell Pro, sans-serif';
+
+ }
+
+ h1 {
+     font-size: 3rem;
+     line-height: 5rem;
+     font-weight: 900;
+ }
+
+
+
+ h3 {
+     color: #fff;
+ }
+
+ i {
+     color: #4E6E81;
+ }
+
+ h2 {
+     font-size: 3rem;
+     line-height: 1.5;
+ }
+
+ .btn a {
+     color: #fff;
+ }
+
+
+
+
+ /* Navigation Bar */
+
+ .navbar {
+
+     color: #FF0303;
+     background-color: #2E3840;
+ }
+
+ .navbar-brand {
+     font-family: "Ubuntu";
+     font-size: 2.5rem;
+     font-weight: bold;
+ }
+
+ .image_logo {
+     width: 20%;
+     height: 20%;
+ }
+
+ .nav-item {
+     padding: 0 18px;
+ }
+
+ .nav-link {
+     font-size: 1.2rem;
+     font-family: Montserrat-Light;
+ }
+
+
+
+
+ /* ABOUT*/
+ .page-heading {
+     color: white;
+     text-align: center;
+ }
+
+ .about {
+     background-color: #2E3840;
+ }
+
+ .mb-4 {
+     font-family: 'Montserrat-dark, sans-serif';
+     font-size: 1.3rem;
+     text-align: center;
+     padding-top: 2%;
+     padding-bottom: 2%;
+     color: black;
+
+ }
+
+
+ /*BLOG*/
+ .post-title a,
+ .post-subtitle {
+     color: black;
+ }
+
+ .site-heading {
+     color: white;
+ }
+
+ .post-preview {
+     font-size: 1rem;
+     text-align: center;
+     height: auto;
+     margin-bottom: 2rem;
+     margin-top: 2rem;
+ }
+
+ .masthead {
+     height: 300px;
+ }
+
+ /*post*/
+ .masthead {
+     position: relative;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 40vh;
+     color: white;
+     padding-top: 15rem;
+     padding-bottom: 10rem;
+     text-align: center;
+     overflow: hidden;
+ }
+
+
+ /* Footer Section */
+ #cta {
+     padding-top: 2%;
+     color: white;
+     background-color: #2E3840;
+     text-align: center;
+ }
+
+
+
+ /* Responsive Query */
+
+
+ @media (max-width: 1028px) {
+     #title {
+         text-align: center;
+     }
+
+     .title-image {
+         position: static;
+         transform: rotate(0);
+     }
+ }

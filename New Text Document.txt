@@ -1,0 +1,19 @@
+Ce code est une application Flask d'un blog qui permet à un utilisateur de s'inscrire, de se connecter, de créer et de commenter des publications de blog.
+
+Le code commence par l'importation des modules nécessaires tels que smtplib, Flask, render_template, redirect, url_for, flash, abort, request, Bootstrap, CKEditor, date, wraps, generate_password_hash, check_password_hash, SQLAlchemy, relationship, UserMixin, login_user, LoginManager, login_required, current_user, logout_user, CreatePostForm, CommentForm, CreateContactForm, Gravatar.
+
+Le code utilise également une base de données SQLite pour stocker les informations des utilisateurs, des publications de blog et des commentaires. La table User est créée pour stocker les informations des utilisateurs, la table BlogPost pour stocker les publications de blog et la table Comment pour stocker les commentaires associés aux publications de blog.
+
+L'application commence par initialiser Flask, CKEditor et Bootstrap, ainsi que Gravatar pour permettre aux utilisateurs de voir leurs images de profil.
+
+L'application est ensuite configurée pour se connecter à la base de données SQLite. La configuration SQLALCHEMY_DATABASE_URI est utilisée pour spécifier le chemin d'accès à la base de données, tandis que SQLALCHEMY_TRACK_MODIFICATIONS est utilisé pour désactiver le suivi des modifications.
+
+La classe User est définie pour stocker les informations de l'utilisateur, y compris l'adresse e-mail, le mot de passe haché et le nom. La classe BlogPost est définie pour stocker les publications de blog, y compris le titre, le sous-titre, la date, le corps et l'URL de l'image. La classe Comment est définie pour stocker les commentaires associés aux publications de blog.
+
+La fonction load_user est définie pour charger un utilisateur en fonction de son identifiant d'utilisateur.
+
+La fonction admin_only est définie pour restreindre l'accès aux utilisateurs avec un identifiant d'utilisateur autre que 1.
+
+Les routes sont ensuite définies pour accéder à la page d'accueil, afficher toutes les publications de blog, s'inscrire, se connecter, se déconnecter et afficher une publication de blog individuelle. Les fonctions pour chaque route sont définies pour effectuer les actions appropriées en fonction de la demande de l'utilisateur. Les fonctions utilisent également les modèles HTML pour rendre le contenu de la page.
+
+Enfin, l'application est exécutée en appelant app.run().

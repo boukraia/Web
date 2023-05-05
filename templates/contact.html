@@ -1,0 +1,74 @@
+{% include "header.html" %} {% import "bootstrap/wtf.html" as wtf %}
+
+<!-- Page Header -->
+<header
+  class="masthead"
+  style="
+    background-image: url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  "
+>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          {% if msg_sent%}
+          <h1>Successfully sent your message</h1>
+          {% else %}
+          <h1>Contact Me</h1>
+          <span class="subheading">Have questions? I have answers.</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="contact-info">
+  <div class="contact-maps">
+    <h3 class="title">
+      <a class="bp-element-hover" href="#" data-hover="">Nos coordonnées</a>
+    </h3>
+    <div class="description">
+      Avenue Mokhtar Ziedi Sakiet Ezzit, Sfax<br />
+      3021, Tunisie <br />
+      <br />
+      kits@kits.com
+    </div>
+  </div>
+  <div class="contact-maps">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104888.66472267587!2d10.65069808072556!3d34.76136674578245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13002cda1486c695%3A0x22dfe0a62c50ce6f!2sSfax%2C%20Tunisie!5e0!3m2!1sfr!2sfr!4v1683034630676!5m2!1sfr!2sfr"
+      width="800"
+      height="300"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
+        <div>
+          <p>
+            Want to get in touch? Fill out the form below to send me a message
+            and I will get back to you as soon as possible!
+          </p>
+          <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+          <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+          <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+
+          {{ wtf.quick_form(form, novalidate=True, button_map={"submit":
+          "primary"}) }}
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    {% include "footer.html" %}
+  </div>
+</div>
